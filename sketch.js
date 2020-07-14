@@ -101,6 +101,10 @@ function draw() {
      
      divisions[k].display();
    }
+   if (gameState == "end"){
+     textSize(100)
+     text("GAME OVER", 150, 200);
+   }
 }
 function mousePressed(){
   if(gameState == "start" && particle == null){
